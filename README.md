@@ -19,7 +19,7 @@ Ensure that you have the file 'AG_NO3_fill_cells_remove_NAN.csv' in the same dir
 The second cell plots the Correctly detected anomalies via a scatter-plot. Note, you must have matplotlib imported for this cell to work.
 
 ## Discusion
-This was a rather brute force way to attempt anomaly detection. Originally our code checked and updated every data point in the window at each step. This led to very poor performance time-wise and detection wise. Perhaps we were overfitting the data in this approach. In our final approach it checks every data point only once. This led to much better performance time-wise but may have led to underfitting in our detection since there was a high number of false positives. Regardless it met the requirements set by the instructor especially outperforming the minimum normal event detection accuracy rate of 80%.
+This was a rather brute force way to attempt anomaly detection. Originally our code checked and updated every data point in the window at each step. This led to very poor performance time-wise and detection wise. Perhaps we were overfitting the data in this approach. In our final approach it checks every data point only once. This led to much better performance time-wise but may have led to underfitting in our detection since there was a high number of false positives. The model has decent recall at 0.779 yet its precision leaves much to be wanted at only 0.049. Regardless it met the requirements set by the instructor especially outperforming the minimum normal event detection accuracy rate of 80%.
 
 ## Results
 Below is our output for the program when run with a window size of 100 and a threshold of 97.5.
